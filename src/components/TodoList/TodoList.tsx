@@ -5,7 +5,7 @@ export type TaskType = {
 };
 type PropsType = {
   tasks: Array<TaskType>;
-  removeTask:Function;
+  removeTask:Function; //убрать
 };
 
 function TodoList(props: PropsType) {

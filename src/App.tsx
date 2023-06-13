@@ -8,9 +8,7 @@ function App() {
     { id: 2, title: "task two", isDone: true },
     { id: 3, title: "task three", isDone: false },
   ];
-  const arr = useState(initTasks);
-  const tasks = arr[0];
-  const setTasks = arr[1];
+  const [tasks, setTasks]  = useState(initTasks);
 
   function removeTask(id: number) {
     const filteredTasks = tasks.filter((t) => t.id !== id);

@@ -22,7 +22,7 @@ function TodoList(props: PropsType) {
                 <li>
                   <input type="checkbox" checked={t.isDone} />
                   <span>{t.title}</span>
-                  <button onClick={()=>{alert(t.id)}}>X</button>
+                  <button onClick={()=>props.removeTask(t.id)}>X</button>
                 </li>
               </>
             );

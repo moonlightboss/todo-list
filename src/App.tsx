@@ -3,12 +3,11 @@ import "./App.css";
 import TodoList, { TaskType } from "./components/TodoList/TodoList.tsx";
 
 function App() {
-  const initTasks = [
+  const [tasks, setTasks] = useState([
     { id: 1, title: "task one", isDone: true },
     { id: 2, title: "task two", isDone: true },
     { id: 3, title: "task three", isDone: false },
-  ];
-  const [tasks, setTasks]  = useState(initTasks);
+  ]);
 
   function removeTask(id: number) {
     const filteredTasks = tasks.filter((t) => t.id !== id);

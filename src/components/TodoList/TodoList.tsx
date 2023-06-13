@@ -7,7 +7,7 @@ export type TaskType = {
 };
 type PropsType = {
   tasks: Array<TaskType>;
-  removeTask:(id:number)=> void; //убрать просто Function нельзя.
+  removeTask:(id:number)=> void; //убрать, просто Function лучше не использовать.
   changeFilter:(value:FilterValuesType)=> void;
 };
 
